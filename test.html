@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像のダウンロード</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .download-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff69b4; /* ピンク色 */
+            color: white;
+            text-decoration: none;
+            border-radius: 30px; /* 角丸 */
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+			width: 780px;
+        }
+        .download-btn:hover {
+            background-color: #ff85c4; /* ホバー時の色 */
+        }
+    </style>
+</head>
+<body>
+
+	
+	
+	<a id="downloadLink" href="image3.png" download="image1.png" class="download-btn">画像をダウンロード</a>
+	<br>
+	<br>
+	<img id="image" src="image3.png" alt="ダウンロード用の画像">
+	
+    <script>
+        // JavaScriptで動的に処理が必要な場合（例：画像URLの変更）
+        const image = document.getElementById('image');
+        const downloadLink = document.getElementById('downloadLink');
+
+        // 画像のURLを動的に変更する場合
+        // const newImageUrl = 'new_image_url.jpg';
+        // image.src = newImageUrl;
+        // downloadLink.href = newImageUrl;
+        // downloadLink.download = 'new_image_name.jpg';
+    </script>
+
+</body>
+</html>
